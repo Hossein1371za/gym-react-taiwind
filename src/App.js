@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Aos from 'aos';
+import "aos/dist/aos.css"
+
+import Banner from './components/Banner';
 
 function App() {
+  Aos.init({
+    duration:2500,
+    delay:400,
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="max-w-[1440px] mx-auto bg-page overflow-hidden relative">
+      <Banner/>
     </div>
   );
 }
