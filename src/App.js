@@ -2,6 +2,7 @@ import './App.css';
 import Aos from 'aos';
 import "aos/dist/aos.css"
 
+import Header from './components/Header';
 import Banner from './components/Banner';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   })
   return (
     <div className="max-w-[1440px] mx-auto bg-page overflow-hidden relative">
+      <Header/>
       <Banner/>
     </div>
   );
