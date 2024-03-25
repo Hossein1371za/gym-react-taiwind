@@ -27,8 +27,8 @@ const Header = () => {
       </a>
       <Nav />
       <div className="hidden lg:flex space-x-4 top-0">
-        <button>{btnLoginText}</button>
-        <button>{btnSignupText}</button>
+        <button className="btn btn-sm text-white hover:text-primary-200 transition">{btnLoginText}</button>
+        <button className="btn btn-sm btn-primary ">{btnSignupText}</button>
       </div>
       <div
         onClick={() => setToggleMenu(!toggleMenu)}
