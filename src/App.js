@@ -4,6 +4,7 @@ import "aos/dist/aos.css"
 
 import Header from './components/Header';
 import Banner from './components/Banner';
+import About from './components/About';
 
 function App() {
   Aos.init({
@@ -14,6 +15,7 @@ function App() {
     <div className="max-w-[1440px] mx-auto bg-page overflow-hidden relative">
       <Header/>
       <Banner/>
+      <About/>
       <div className='h-[4000px]'></div>
     </div>
   );
