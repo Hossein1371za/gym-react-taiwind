@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { header } from "../data";
 
@@ -11,6 +11,11 @@ const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const { logo, btnLoginText, btnSignupText } = header;
+  useEffect(()=>{
+    window.addEventListener("scroll",()=>{
+      window.scrollY > 80 ? setIsActive(true) : setIsActive(false)
+    })
+  },[])
   return (
     <header
       className={`${
