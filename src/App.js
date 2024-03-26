@@ -5,6 +5,7 @@ import "aos/dist/aos.css"
 import Header from './components/Header';
 import Banner from './components/Banner';
 import About from './components/About';
+import Workouts from './components/Workouts';
 
 function App() {
   Aos.init({
@@ -16,6 +17,7 @@ function App() {
       <Header/>
       <Banner/>
       <About/>
+      <Workouts/>
       <div className='h-[4000px]'></div>
     </div>
   );

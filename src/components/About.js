@@ -37,7 +37,7 @@ const About = () => {
         <div data-aos="fade-up" data-aos-delay="400">
           <a
             className="link flex items-center gap-x-2 hover:gap-x-6 transition-all duration-300"
-            href="#"
+            href="/"
           >
             {link}
             <IoIosArrowDroprightCircle className="text-2xl" />
