@@ -1,0 +1,36 @@
+import React from "react";
+
+import { workouts } from "../../data";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "./workoutSlider.css";
+import { Navigation } from "swiper";
+
+const WorkoutSlider = () => {
+  const { programs } = workouts;
+  return (
+    <Swiper>
+      {programs.map((program, index) => {
+        const { image, name } = program;
+        return (
+          <SwiperSlide
+            className="max-w-[320px] max-h-[320px] relative"
+            key={index}
+          >
+            <img src={image} alt="." />
+            <div className="absolute left-[20px] bottom-[20px] bg-white px-[14px] h-[26px] flex items-center rounded-[1px]">
+              <div className="font-primary font-semibold text-sm text-neutral-500">
+                {name}
+              </div>
+            </div>
+          </SwiperSlide>
+        );
+      })}
+    </Swiper>
+  );
+};
+
+export default WorkoutSlider;
