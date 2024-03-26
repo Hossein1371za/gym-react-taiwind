@@ -7,12 +7,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "./workoutSlider.css";
-import { Navigation } from "swiper";
+
+
+import { Navigation } from 'swiper/modules';
+
 
 const WorkoutSlider = () => {
   const { programs } = workouts;
   return (
-    <Swiper>
+    <Swiper slidesPerView={2} spaceBetween={32} navigation={true} 
+    breakpoints={{
+      768:{
+        slidesPerView :3,
+      },
+      1024:{
+        slidesPerView :4,
+      },
+    }}
+    modules={[Navigation]}
+    className="workoutSlider">
       {programs.map((program, index) => {
         const { image, name } = program;
         return (
