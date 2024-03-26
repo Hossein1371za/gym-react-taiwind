@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "./workoutSlider.css";
 
 
-import { Navigation } from 'swiper/modules';
+import { Navigation } from 'swiper';
 
 
 const WorkoutSlider = () => {
