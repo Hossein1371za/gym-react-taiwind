@@ -15,7 +15,7 @@ const Pricing = () => {
           {title} <span className="text-primary-200">.</span>
         </h2>
       </div>
-      <PlanList />
+      <PlanList plans={plans}/>
     </section>
   );
 };
