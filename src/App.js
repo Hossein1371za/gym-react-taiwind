@@ -7,6 +7,7 @@ import Banner from "./components/Banner";
 import About from "./components/About";
 import Workouts from "./components/workout/Workouts";
 import Pricing from "./components/Pricing";
+import Community from "./components/Community";
 
 function App() {
   Aos.init({
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Workouts />
       <Pricing />
+      <Community />
       <div className="h-[4000px]"></div>
     </div>
   );
