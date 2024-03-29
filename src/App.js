@@ -10,6 +10,7 @@ import Pricing from "./components/Pricing";
 import Community from "./components/Community";
 import Faq from "./components/Faq";
 import Join from "./components/Join";
+import Footer from "./components/Footer";
 
 function App() {
   Aos.init({
@@ -25,7 +26,8 @@ function App() {
       <Pricing />
       <Community />
       <Faq />
-      <Join/>
+      <Join />
+      <Footer />
       <div className="h-[4000px]"></div>
     </div>
   );
