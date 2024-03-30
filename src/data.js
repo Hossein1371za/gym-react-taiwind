@@ -206,5 +206,5 @@ export const join = {
 
 export const footer = {
   logo: Logo,
-  copyrightText: 'All rights reserved. Gymme 2022.',
+  copyrightText: 'All rights reserved. Gymme 2024.',
 };
